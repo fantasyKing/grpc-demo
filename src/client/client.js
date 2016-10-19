@@ -16,7 +16,7 @@ function main() {
   } else {
     user = 'world';
   }
-  client.sayHello({ name: user }, (err, response) => {
+  client.sayNo({ name: user }, (err, response) => {
     console.log('Greeting:', response.message);
   });
 }

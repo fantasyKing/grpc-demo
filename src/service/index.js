@@ -1,3 +1,5 @@
 import helloworld from './helloworld';
 
-export default helloworld;
+export default {
+  Greeter: helloworld
+};

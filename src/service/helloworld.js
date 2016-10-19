@@ -1,5 +1,5 @@
 export default new class {
-  sayHello(call, callback) {
+  async sayHello(call, callback) {
     callback(null, { message: `Hello${call.request.name}` });
   }
 };

@@ -11,7 +11,9 @@ const hello_proto = grpc.load({ root: BASE_PROTO_PATH, file: PROTO_PATH }).hello
 
 function main() {
   const server = new grpc.Server();
-  server.addProtoService(hello_proto.Greeter.service, services);
+  for (const ser of Object.keys(services)) {
+    server.addProtoService(hello_proto[ser].service, services[ser]);
+  }
   server.bind('0.0.0.0:50051', grpc.ServerCredentials.createInsecure());
   server.start();
   console.log('grpc server start');
