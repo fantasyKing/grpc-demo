@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package helloworld;
+
+import "common/msg_in.proto";
+import "common/msg_out.proto"
+
+service Greeter {
+  rpc sayHelloWorld (msg_in.HelloRequest) returns (msg_out.HelloReply) {}
+}

@@ -1,0 +1,7 @@
+syntax "proto3";
+
+package msg_in;
+
+message HelloRequest {
+  string name = 1;
+}

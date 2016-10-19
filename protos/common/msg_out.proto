@@ -1,0 +1,7 @@
+syntax "proro3";
+
+package msg_out;
+
+message HelloReply {
+  string message = 1;
+}
