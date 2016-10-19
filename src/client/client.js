@@ -4,7 +4,7 @@
  */
 import grpc from 'grpc';
 
-const ProtoPath = `${__dirname}./../../protos/hello_world.proto`;
+const ProtoPath = `${__dirname}/../../protos/hello_world.proto`;
 const hello_proto = grpc.load(ProtoPath).helloworld;
 
 function main() {
