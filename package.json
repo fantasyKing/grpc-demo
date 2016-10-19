@@ -13,6 +13,7 @@
   "author": "zhanggj",
   "license": "ISC",
   "dependencies": {
+    "babel-runtime": "^6.11.6",
     "grpc": "^1.0.1-pre1"
   },
   "devDependencies": {

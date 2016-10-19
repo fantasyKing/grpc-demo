@@ -1,4 +1,4 @@
-syntax "proro3";
+syntax = "proto3";
 
 package msg_out;
 
